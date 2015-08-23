@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div(class='container')
+    form(class='form-signin')
+      h2(class='form-signin-heading')|Inicie a sessão.
+      label(class='sr-only' for='inputNumber')|Matricula
+      input(id='inputNumber' class='form-control' type='text' autofocus='' required='' placeholder='Matricula' name='matricula')
+      label(class='sr-only' for='inputPassword')|Senha
+      input(id='inputPassword' class='form-control' type='password' required='' placeholder='Senha' name='senha')
+      button(class='btn btn-lg btn-primary btn-block' type='button' onclick='login()')|Entrar

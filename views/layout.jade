@@ -1,0 +1,13 @@
+doctype html
+html(lang='pt-br')
+  head
+    meta(charset='utf-8' name='viewport' content='width=device-width, initial-scale=1.0')
+    title= title
+    link(href='/stylesheets/bootstrap.min.css' rel='stylesheet').
+    link(rel='stylesheet', href='/stylesheets/style.css').
+    script(src='/javascripts/jquery.min.js').
+    script(src='/socket.io/socket.io.js').
+    script(type='text/javascript', src='/javascripts/io.js').
+    script(src='/javascripts/bootstrap.min.js').
+  body
+    block content
